@@ -48,34 +48,31 @@ p {
   border: 2px solid #1a2236;
 }
 
-/*mobile*/
-@media (min-width: 375px) {
-  .container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    /* border: 10px solid #1a2236; */
-  }
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /* border: 10px solid #1a2236; */
+}
 
-  #full-name {
-    font-family: Playfair Display;
-    font-size: 50px;
-    font-weight: 400;
-    line-height: 50px;
-    letter-spacing: 0em;
-    text-align: left;
-    margin-top: 30px;
-  }
+#full-name {
+  font-family: Playfair Display;
+  font-size: 50px;
+  font-weight: 400;
+  line-height: 50px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-top: 30px;
+}
 
-  .toggle {
-    padding: 19px 14px;
-  }
+.toggle {
+  padding: 19px 14px;
+}
 
-  .header {
-    display: flex;
-    flex-direction: column;
-    padding: 0 14px 0 16px;
-  }
+.header {
+  display: flex;
+  flex-direction: column;
+  padding: 0 14px 0 16px;
 }
 
 /*desktop*/
