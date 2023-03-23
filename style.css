@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: #fff;
+  color: #1a2236;
+  margin: 0;
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+  background: #1a2236;
+  color: #fff;
+  padding: 12px 42px;
+}
+
+p {
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: -0.01em;
+  text-align: left;
+  margin-top: 17px;
+  margin-bottom: 22px;
+}
+
+.primary-btn {
+  box-sizing: border-box;
+  background: #1a2236;
+  text-align: center;
+}
+.primary-btn:hover {
+  box-sizing: border-box;
+  background: #fff;
+  color: #1a2236;
+  border: 1px solid #1a2236;
+}
+.primary-btn:active {
+  box-sizing: border-box;
+  background: #fff;
+  color: #1a2236;
+  border: 2px solid #1a2236;
+}
+
+/*mobile*/
+@media (min-width: 375px) {
+  .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* border: 10px solid #1a2236; */
+  }
+
+  #full-name {
+    font-family: Playfair Display;
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 50px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-top: 30px;
+  }
+
+  .toggle {
+    padding: 19px 14px;
+  }
+
+  .header {
+    display: flex;
+    flex-direction: column;
+    padding: 0 14px 0 16px;
+  }
+}
+
+/*desktop*/
+@media (min-width: 768px) {
+}
