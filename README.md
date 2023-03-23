@@ -52,7 +52,6 @@ After you're finished please remove all the comments and instructions!
 - [👥 Authors](#authors)
 - [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
-- [⭐️ Show your support](#support)
 - [🙏 Acknowledgements](#acknowledgements)
 - [❓ FAQ (OPTIONAL)](#faq)
 - [📝 License](#license)
@@ -92,9 +91,9 @@ After you're finished please remove all the comments and instructions!
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-> Add a link to your deployed project.
+<!-- > Add a link to your deployed project. -->
 
-- [Live Demo Link](https://google.com)
+- [Coming Soon...]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -120,7 +119,12 @@ Example command:
 
 ### Setup
 
-Clone this repository to your desired folder.
+Use the '$git clone <code_link>' command and
+clone this repository to your desired folder.
+
+Run the following command on your local machine:
+cd my-folder
+git clone git@github.com:Bifabig/personal-portfolio-microverse.git
 
 <!--
 Example commands:

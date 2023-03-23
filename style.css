@@ -1,39 +1,42 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:wght@300;400;500;600;700;800&display=swap");
 
 * {
   box-sizing: border-box;
 }
 
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: "Poppins" sans-serif;
   background: #fff;
   color: #1a2236;
   margin: 0;
-  overflow: hidden;
 }
 
 a {
   text-decoration: none;
-  background: #1a2236;
-  color: #fff;
-  padding: 12px 42px;
 }
 
 p {
-  font-family: Poppins, sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 21px;
   letter-spacing: -0.01em;
   text-align: left;
-  margin-top: 17px;
-  margin-bottom: 22px;
+}
+
+h1 {
+  margin: 0;
+}
+
+.toggle {
+  padding: 19px 14px;
 }
 
 .primary-btn {
   box-sizing: border-box;
   background: #1a2236;
   text-align: center;
+  color: #fff;
+  padding: 12px 42px;
 }
 
 .primary-btn:hover {
@@ -56,8 +59,13 @@ p {
   justify-content: space-between;
 }
 
+.wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
 #full-name {
-  font-family: Playfair Display, sans-serif;
+  font-family: "Playfair Display", sans-serif;
   font-size: 50px;
   font-weight: 400;
   line-height: 50px;
@@ -66,12 +74,19 @@ p {
   margin-top: 30px;
 }
 
-.toggle {
-  padding: 19px 14px;
+.showcase {
+  display: flex;
+  flex-direction: column;
 }
 
-.header {
+.showcase_text {
   display: flex;
   flex-direction: column;
   padding: 0 14px 0 16px;
+}
+
+.showcase_img {
+  display: flex;
+  flex-direction: column;
+  margin-top: 32px;
 }
