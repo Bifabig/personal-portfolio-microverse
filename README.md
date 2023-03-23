@@ -29,7 +29,7 @@ After you're finished please remove all the comments and instructions!
   
   <br/>
 
-  <h3><b>My First Microverse Project README</b></h3>
+  <h3><b>Personal Portfolio Microverse Project README</b></h3>
 
 </div>
 
@@ -59,11 +59,11 @@ After you're finished please remove all the comments and instructions!
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [Hello Microverse] <a name="about-project"></a>
+# 📖 [Personal Portfolio] <a name="about-project"></a>
 
 <!-- > Describe your project in 1 or 2 sentences. -->
 
-**[Hello Microverse]** is a simple hello world project for microverse bootcamp.
+**[Personal Portfolio]** is a portfolio website diplaying all the projects completed by myself for microverse.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -84,7 +84,7 @@ After you're finished please remove all the comments and instructions!
 
 <!-- > Describe between 1-3 key features of the application. -->
 
-- **[It outputs "hello world"]**
+- **[It displays personal projects that I've completed]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
