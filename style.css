@@ -174,6 +174,8 @@ input {
 
 .lang-container {
   display: flex;
+  padding: 0;
+  margin: 0;
 }
 
 .about {
@@ -312,6 +314,10 @@ input:focus {
 }
 
 .social-icons li {
+  list-style-type: none;
+}
+
+.lang-container li {
   list-style-type: none;
 }
 
