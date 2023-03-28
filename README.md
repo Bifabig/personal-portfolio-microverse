@@ -204,6 +204,13 @@ Example:
 - Twitter: [@biftu94](https://twitter.com/biftu94)
 - LinkedIn: [Biftu Girma](https://www.linkedin.com/in/biftu-girma-3598a8126/)
 
+
+👤 **Author2**
+
+- GitHub: [mosidrum](https://github.com/mosidrum)
+- Twitter: [mosidrum](https://twitter.com/mosidrum)
+- LinkedIn: [mosidrum](https://www.linkedin.com/in/)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- CONTRIBUTING -->
