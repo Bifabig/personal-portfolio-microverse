@@ -300,26 +300,44 @@
         </div>
       </div>
 
-      <form class="contact">
+      <form
+        action="https://formspree.io/f/xjvdabbw"
+        method="POST"
+        class="contact"
+      >
         <div class="form-control">
-          <label class="contact-label">Your name</label>
-          <input class="input" type="text" placeholder="Biftu" required />
+          <label for="name" class="contact-label">Your name</label>
+          <input
+            class="input"
+            type="text"
+            name="text"
+            placeholder="Biftu"
+            maxlength="30"
+            id="name"
+            required
+          />
         </div>
         <div class="form-control">
-          <label class="contact-label">Your email</label>
+          <label for="email" class="contact-label">Your email</label>
           <input
             class="input"
             type="email"
+            name="email"
+            id="email"
             placeholder="biftu@gm..."
             required
           />
         </div>
         <div class="form-control">
-          <label class="contact-label">Your message</label>
+          <label for="message" class="contact-label">Your message</label>
           <textarea
             class="input"
             placeholder="Enter your message here..."
+            id="message"
+            name="message"
+            maxlength="500"
             rows="5"
+            required
           ></textarea>
         </div>
         <input type="submit" value="Start collaboration" class="primary-btn" />
