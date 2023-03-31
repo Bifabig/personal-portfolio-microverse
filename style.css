@@ -751,6 +751,7 @@ input:focus {
 
   .get-started {
     margin-top: 100px;
+    background: #f9f9fa;
   }
 
   .get-started .get-started-text {
