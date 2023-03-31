@@ -120,10 +120,15 @@ input {
 }
 
 .right_arrow {
+  display: block;
   width: 20.57px;
   height: 15.35px;
   margin: 3px 0 0 10px;
 }
+
+/* .right_arrow_black {
+  display: none;
+} */
 
 .wrapper {
   display: flex;
@@ -240,6 +245,14 @@ input {
   margin: 0;
 }
 
+.arrow_desktop {
+  display: none;
+}
+
+.arrow_mobile {
+  display: block;
+}
+
 .about {
   display: flex;
   flex-direction: column;
@@ -252,9 +265,11 @@ input {
 }
 
 .about .primary-btn {
+  display: flex;
+  flex-direction: row;
   background: #1a2236;
   padding: 12px 42px;
-  text-align: center;
+  justify-content: center;
   margin-top: 6px;
 }
 
@@ -272,19 +287,19 @@ input {
 .about_card_blue {
   display: grid;
   background: #1c528a;
-  padding: 20px 40px 40px 40px;
+  padding: 20px 0 0 40px;
 }
 
 .about_card_red {
   display: grid;
   background: #e2505c;
-  padding: 20px 40px 40px 40px;
+  padding: 20px 0 0 40px;
 }
 
 .about_card_yellow {
   display: grid;
   background: #febf52;
-  padding: 20px 40px 40px 40px;
+  padding: 20px 0 0 40px;
 }
 
 #about_card_title {
@@ -295,9 +310,8 @@ input {
 .about_card_icon {
   align-self: end;
   justify-self: end;
-  width: 102px;
-  height: 102px;
-  margin: 0 -40px -40px 0;
+  width: 60px;
+  height: 60px;
 }
 
 .dots_img_teal {
@@ -419,6 +433,14 @@ input:focus {
   width: 24px;
 }
 
+.work-card:nth-child(6) .lang-container .lang_mobile {
+  display: block;
+}
+
+.work-card:nth-child(6) .lang-container .lang_desktop {
+  display: none;
+}
+
 @media screen and (min-width: 768px) {
   .toggle,
   #logo {
@@ -526,10 +548,10 @@ input:focus {
   }
 
   .work-card-display .work-card-text h3 {
-    font-size: 40px;
+    font-size: 50px;
   }
 
-  .work-card-display img {
+  .laptop-1 {
     display: none;
   }
 
@@ -579,7 +601,7 @@ input:focus {
     grid-column: 3;
     grid-row: 1;
     width: 100%;
-    height: 270px;
+    height: 60%;
   }
 
   .work-card-grid .work-card:nth-child(1) {
@@ -595,7 +617,14 @@ input:focus {
   }
 
   .work-card:nth-child(6) .work-card-text {
-    margin-top: 70px;
+    margin-top: 60px;
+  }
+
+  .work-card:nth-child(6) .work-card-text h3 {
+    font-size: 25px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
   }
 
   .work-card-grid .work-card:nth-child(1) .work-card-text {
@@ -608,13 +637,15 @@ input:focus {
     text-overflow: ellipsis;
   }
 
-  .image-geometry_7 img {
-    width: 20%;
-    height: 20%;
-    margin-top: -200px;
+  .work-card:nth-child(6) .lang-container .lang_mobile {
+    display: none;
   }
 
-  .work-card:nth-child(6) img {
+  .work-card:nth-child(6) .lang-container .lang_desktop {
+    display: block;
+  }
+
+  .work-card .laptop {
     display: none;
   }
 
@@ -658,24 +689,35 @@ input:focus {
   }
 
   .primary-btn-2 {
-    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
     background: #fff;
     color: #1a2236;
     margin-top: 40px;
-    width: 45%;
+    width: 212px;
   }
 
   .primary-btn-2:hover {
     background: #1a2236;
     color: #fff;
     margin-top: 40px;
-    width: 45%;
+    width: 212px;
+  }
+
+  .right_arrow_black {
+    display: flex;
+    width: 50%;
+    height: 50%;
+    margin: 3px 0 0 10px;
+  }
+
+  .right_arrow {
+    display: none;
   }
 
   .about {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     gap: 60px;
     margin: 0 80px;
   }
@@ -721,10 +763,6 @@ input:focus {
     margin: 0 230px;
   }
 
-  .get-started #logo_desktop {
-    display: block;
-  }
-
   .contact {
     display: grid;
     gap: 35px;
@@ -750,7 +788,7 @@ input:focus {
     height: 30%;
   }
 
-  .get-started #logo {
+  .get-started #logo_desktop {
     display: block;
     height: 20%;
     width: 20%;
@@ -785,5 +823,19 @@ input:focus {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
+  }
+
+  .image-geometry_7 img {
+    width: 20%;
+    height: 20%;
+    margin-top: -200px;
+  }
+
+  .arrow_desktop {
+    display: block;
+  }
+
+  .arrow_mobile {
+    display: none;
   }
 }
