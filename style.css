@@ -77,6 +77,57 @@ input {
   cursor: pointer;
 }
 
+.title-word {
+  animation: color-animation 4s linear infinite;
+}
+
+.title-word-1 {
+  --color-1: #df8453;
+  --color-2: #3d8dae;
+  --color-3: #e4a9a8;
+}
+
+.title-word-2 {
+  --color-1: #dbad4a;
+  --color-2: #accfcb;
+  --color-3: #17494d;
+}
+
+@keyframes color-animation {
+  0% {
+    color: var(--color-1);
+  }
+
+  32% {
+    color: var(--color-1);
+  }
+
+  33% {
+    color: var(--color-2);
+  }
+
+  65% {
+    color: var(--color-2);
+  }
+
+  66% {
+    color: var(--color-3);
+  }
+
+  99% {
+    color: var(--color-3);
+  }
+
+  100% {
+    color: var(--color-1);
+  }
+}
+
+.showcase-name {
+  display: flex;
+  flex-direction: column;
+}
+
 .toggle {
   padding: 19px 14px;
 }
@@ -838,5 +889,12 @@ input:focus {
 
   .arrow_mobile {
     display: none;
+  }
+
+  .showcase-name {
+    display: grid;
+    place-items: center;
+    text-align: center;
+    margin-bottom: -80px;
   }
 }
