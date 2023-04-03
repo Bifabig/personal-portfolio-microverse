@@ -98,7 +98,7 @@ After you're finished please remove all the comments and instructions!
 
 <!-- > Add a link to your deployed project. -->
 
-- [Coming Soon...]
+- [https://bifabig.github.io/personal-portfolio-microverse/]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -185,7 +185,7 @@ Example command:
 
 You can deploy this project using:
 
-None
+Github Pages
 
 <!--
 Example:
@@ -209,12 +209,11 @@ Example:
 - Twitter: [@biftu94](https://twitter.com/biftu94)
 - LinkedIn: [Biftu Girma](https://www.linkedin.com/in/biftu-girma-3598a8126/)
 
-
 👤 **Author2**
 
 - GitHub: [mosidrum](https://github.com/mosidrum)
 - Twitter: [mosidrum](https://twitter.com/mosidrum)
-- LinkedIn: [mosidrum](https://www.linkedin.com/in/)
+- LinkedIn: [mosidrum](https://www.linkedin.com/in/Ayodeleisaac)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -234,7 +233,7 @@ Feel free to check the [issues page](../../issues/).
 
 <!-- > Give credit to everyone who inspired your codebase. -->
 
-I would like to thank Microverse.
+I would like to thank Microverse and my coding partner @mosidrum.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
