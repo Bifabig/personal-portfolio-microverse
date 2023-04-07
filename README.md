@@ -223,11 +223,23 @@ Example:
 - Twitter: [mosidrum](https://twitter.com/mosidrum)
 - LinkedIn: [mosidrum](https://www.linkedin.com/in/Ayodeleisaac)
 
+👤 **Abdul Wahab**
+
+- GitHub: [@githubhandle](https://github.com/Abdulwhbhussain)
+- Twitter: [@twitterhandle](https://twitter.com/AbdulWhbHussain)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/abdulwhbhussain)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- CONTRIBUTING -->
 
 ## 🤝 Contributing <a name="contributing"></a>
+
+👤 **Abdul Wahab**
+
+- GitHub: [@githubhandle](https://github.com/Abdulwhbhussain)
+- Twitter: [@twitterhandle](https://twitter.com/AbdulWhbHussain)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/abdulwhbhussain)
 
 Contributions, issues, and feature requests are welcome!
 
