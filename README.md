@@ -29,7 +29,7 @@ After you're finished please remove all the comments and instructions!
   
   <br/>
 
-  <h3><b>Personal Portfolio Microverse Project README</b></h3>
+  <h3><b>Personal Portfolio Project README</b></h3>
 
 </div>
 
@@ -58,11 +58,11 @@ After you're finished please remove all the comments and instructions!
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [Personal Portfolio] <a name="about-project"></a>
+# 📖 Personal Portfolio <a name="about-project"></a>
 
 <!-- > Describe your project in 1 or 2 sentences. -->
 
-**[Personal Portfolio]** is a portfolio website diplaying all the projects completed by myself for microverse.
+**Personal Portfolio** is a portfolio website for Biftu Girma including previous projects I managed to complete.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -88,8 +88,6 @@ After you're finished please remove all the comments and instructions!
 
 <!-- > Describe between 1-3 key features of the application. -->
 
-- **[It displays personal projects that I've completed]**
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- LIVE DEMO -->
@@ -98,7 +96,17 @@ After you're finished please remove all the comments and instructions!
 
 <!-- > Add a link to your deployed project. -->
 
-- [https://bifabig.github.io/personal-portfolio-microverse/]
+- <a href="https://bifabig.github.io/personal-portfolio-microverse/">Personal Portfolio Live</a>
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- Video -->
+
+## 🎥 Video <a name="video"></a>
+
+<!-- > Add a link to your video project. -->
+
+<a href="https://www.loom.com/share/8495aedf60f543beae9c2dbdda779123">Get an understanding of the project by watching this video</a>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
