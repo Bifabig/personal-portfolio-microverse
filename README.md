@@ -211,23 +211,11 @@ Example:
 
 <!-- > Mention all of the collaborators of this project. -->
 
-👤 **Author1**
+👤 **Biftu Girma**
 
 - GitHub: [@Bifabig](https://github.com/Bifabig)
 - Twitter: [@biftu94](https://twitter.com/biftu94)
 - LinkedIn: [Biftu Girma](https://www.linkedin.com/in/biftu-girma-3598a8126/)
-
-👤 **Author2**
-
-- GitHub: [mosidrum](https://github.com/mosidrum)
-- Twitter: [mosidrum](https://twitter.com/mosidrum)
-- LinkedIn: [mosidrum](https://www.linkedin.com/in/Ayodeleisaac)
-
-👤 **Abdul Wahab**
-
-- GitHub: [@githubhandle](https://github.com/Abdulwhbhussain)
-- Twitter: [@twitterhandle](https://twitter.com/AbdulWhbHussain)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/abdulwhbhussain)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -240,6 +228,12 @@ Example:
 - GitHub: [@githubhandle](https://github.com/Abdulwhbhussain)
 - Twitter: [@twitterhandle](https://twitter.com/AbdulWhbHussain)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/abdulwhbhussain)
+
+👤 **Ayodele Isaac**
+
+- GitHub: [mosidrum](https://github.com/mosidrum)
+- Twitter: [mosidrum](https://twitter.com/mosidrum)
+- LinkedIn: [mosidrum](https://www.linkedin.com/in/Ayodeleisaac)
 
 Contributions, issues, and feature requests are welcome!
 
