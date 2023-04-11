@@ -75,6 +75,7 @@ After you're finished please remove all the comments and instructions!
   <summary>Client</summary>
   <ul>
     <li><a href="#">HTML & CSS</a></li>
+    <li><a href="#">JavaScript</a></li>
   </ul>
 </details>
 
@@ -235,6 +236,12 @@ Example:
 - GitHub: [mosidrum](https://github.com/mosidrum)
 - Twitter: [mosidrum](https://twitter.com/mosidrum)
 - LinkedIn: [mosidrum](https://www.linkedin.com/in/Ayodeleisaac)
+
+👤 **Theodore Osei Asimeng**
+
+- GitHub: [@githubhandle](https://github.com/Theodoraldo)
+- Twitter: [@twitterhandle](https://twitter.com/AsimengOse33947)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/theodore-asimeng-osei-80075125b/
 
 Contributions, issues, and feature requests are welcome!
 
