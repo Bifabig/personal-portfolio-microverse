@@ -122,7 +122,7 @@ To get a local copy up and running, follow these steps.
 
 ### Prerequisites
 
-Basic HTML and CSS knowledge
+Basic HTML, CSS and JavaScript knowledge
 
 <!--
 Example command:
