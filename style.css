@@ -137,7 +137,7 @@ input {
   right: 1rem;
   padding: 4px;
   border: black solid 0;
-  background: white;
+  background: none;
   cursor: pointer;
 }
 
@@ -153,6 +153,12 @@ input {
   background: white;
   list-style: none;
   padding-top: 4rem;
+  background-image: url(./assets/img/hamburger-menu-top.png),
+    url(./assets/img/hamburger-menu-bottom.png);
+  background-position: left top, left bottom;
+  background-repeat: no-repeat, no-repeat;
+  background-size: 75%, 100%;
+  padding: 15px;
 }
 
 .menu-item {
