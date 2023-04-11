@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" type="text/css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>Biftu's Portfolio</title>
   </head>
   <body>
@@ -13,17 +14,24 @@
         <div id="logo">
           <a href="#"><img src="./assets/img/logo.png" alt="portfolio logo" /></a>
         </div>
+
         <div class="toggle">
-          <a href="#"><img src="./assets/img/toggle.png" alt="toggle" /></a>
-        </div>
-        <div class="menu">
-          <ul class="menu-item">
-            <li><a href="#" class="active">Hello</a></li>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
-        </div>
+
+          <div class="menu">
+
+            <ul class="menu-item">
+              <li><a class="menuItem" href="#"class="active">Hello</a></li>
+              <li><a class="menuItem" href="#">Portfolio</a></li>
+              <li><a class="menuItem" href="#">About</a></li>
+              <li><a class="menuItem" href="#">Contact</a></li> 
+            </ul>
+          </div>
+        
+       <button class="hamburger">
+          <i class="menuIcon material-icons">menu</i>
+          <i class="closeIcon material-icons">close</i>
+        </button>
+      </div>
       </nav>
     </header>
     <section class="showcase">
@@ -494,5 +502,6 @@
         </ul>
       </div>
     </footer>
-  </body>
+    <script type="text/javascript" src="script.js"></script>
+    </body>
 </html>

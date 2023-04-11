@@ -1,11 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:wght@300;400;500;600;700;800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:wght@300;400;500;600;700;800&display=swap');
 
 * {
   box-sizing: border-box;
 }
 
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   background: #fff;
   color: #1a2236;
   margin: 0;
@@ -66,7 +66,7 @@ footer ul {
 
 textarea,
 input {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 16px;
   cursor: pointer;
 }
@@ -126,9 +126,60 @@ input {
   padding: 19px 14px;
 }
 
-.menu {
+.closeIcon {
   display: none;
 }
+
+.hamburger {
+  position: fixed;
+  z-index: 100;
+  top: 1rem;
+  right: 1rem;
+  padding: 4px;
+  border: black solid 0;
+  background: white;
+  cursor: pointer;
+}
+
+.menu {
+  position: fixed;
+  transform: translateY(-100%);
+  transition: transform 0.2s;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 99;
+  background: white;
+  list-style: none;
+  padding-top: 4rem;
+}
+
+.menu-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  height: 100%;
+  margin-top: -40px;
+}
+
+.menu-item li {
+  list-style: none;
+}
+
+.menu-item li a {
+  color: #1a2236;
+}
+
+.showMenu {
+  transform: translateY(0);
+}
+
+/* .menu {
+  display: none;
+} */
 
 .primary-btn {
   font-size: 16px;
@@ -177,7 +228,7 @@ input {
 }
 
 #tagline {
-  font-family: "Playfair Display", sans-serif;
+  font-family: 'Playfair Display', sans-serif;
   font-size: 50px;
   font-weight: 400;
   line-height: 50px;
@@ -495,16 +546,16 @@ input:focus {
     display: none;
   }
 
-  .menu {
+  /* .menu {
     display: flex;
-  }
+  } */
 
   a {
     color: #1a2236;
   }
 
   header a::after {
-    content: "";
+    content: '';
     display: block;
     height: 2px;
     width: 0;
