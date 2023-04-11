@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" type="text/css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>Biftu's Portfolio</title>
   </head>
   <body>
@@ -13,20 +14,37 @@
         <div id="logo">
           <a href="#"><img src="./assets/img/logo.png" alt="portfolio logo" /></a>
         </div>
+
         <div class="toggle">
-          <a href="#"><img src="./assets/img/toggle.png" alt="toggle" /></a>
-        </div>
-        <div class="menu">
-          <ul class="menu-item">
-            <li><a href="#" class="active">Hello</a></li>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
-        </div>
+
+          <div class="menu">
+
+            <ul class="menu-item">
+              <li><a class="menuItem" href="#hello">Hello</a></li>
+              <li><a class="menuItem" href="#portfolio">Portfolio</a></li>
+              <li><a class="menuItem" href="#about">About</a></li>
+              <li><a class="menuItem" href="#contact">Contact</a></li> 
+            </ul>
+          </div>
+        
+       <button class="hamburger">
+          <i class="menuIcon material-icons">menu</i>
+          <i class="closeIcon material-icons">close</i>
+        </button>
+      </div>
+
+      <div class="menu-desktop">
+
+        <ul class="menu-item-desktop">
+          <li><a class="menuItemDesktop active" href="#hello" >Hello</a></li>
+          <li><a class="menuItemDesktop" href="#portfolio">Portfolio</a></li>
+          <li><a class="menuItemDesktop" href="#about">About</a></li>
+          <li><a class="menuItemDesktop" href="#contact">Contact</a></li> 
+        </ul>
+      </div>
       </nav>
     </header>
-    <section class="showcase">
+    <section class="showcase" id="hello">
       <div class="showcase_text">
         <div class="showcase-name">
           <h1 id="tagline">
@@ -65,7 +83,7 @@
       </div>
     </section>
 
-    <section class="works">
+    <section class="works" id="portfolio">
       <div class="work-card-first">
         <h2 id="tagline">Projects</h2>
         <div class="dots_img">
@@ -292,7 +310,7 @@
       </div>
     </section>
 
-    <section class="about">
+    <section class="about" id="about">
       <div class="about-intro">
         <h2 id="tagline">About</h2>
         <p>
@@ -361,7 +379,7 @@
         </div>
       </div>
     </section>
-    <section class="get-started">
+    <section class="get-started" id="contact">
       <div id="logo">
         <a href="#"><img src="./assets/img/logo.png" alt="portfolio logo" /></a>
       </div>
@@ -494,5 +512,6 @@
         </ul>
       </div>
     </footer>
-  </body>
+    <script type="text/javascript" src="script.js"></script>
+    </body>
 </html>

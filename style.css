@@ -1,14 +1,18 @@
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:wght@300;400;500;600;700;800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:wght@300;400;500;600;700;800&display=swap');
 
 * {
   box-sizing: border-box;
 }
 
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   background: #fff;
   color: #1a2236;
   margin: 0;
+}
+
+body::-webkit-scrollbar {
+  display: none;
 }
 
 header {
@@ -66,7 +70,7 @@ footer ul {
 
 textarea,
 input {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 16px;
   cursor: pointer;
 }
@@ -126,8 +130,68 @@ input {
   padding: 19px 14px;
 }
 
-.menu {
+.closeIcon {
   display: none;
+}
+
+.hamburger {
+  position: fixed;
+  z-index: 100;
+  top: 1rem;
+  right: 1rem;
+  padding: 4px;
+  border: black solid 0;
+  background: none;
+  cursor: pointer;
+}
+
+.menu {
+  position: fixed;
+  transform: translateY(-100%);
+  transition: transform 0.2s;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 99;
+  color: #1a2236;
+  background: white;
+  list-style: none;
+  background-image: url(./assets/img/hamburger-menu-top.png), url(./assets/img/hamburger-menu-bottom.png);
+  background-position: left top, left bottom;
+  background-repeat: no-repeat, no-repeat;
+  background-size: 75%, 100%;
+  padding: 15px;
+}
+
+.menu-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  height: 100%;
+  margin-top: -40px;
+}
+
+.menu-item-desktop {
+  display: none;
+}
+
+.menu-item li {
+  list-style: none;
+}
+
+.menu-item li a {
+  color: #1a2236;
+}
+
+.menu-desktop {
+  display: none;
+}
+
+.showMenu {
+  transform: translateY(0);
 }
 
 .primary-btn {
@@ -177,7 +241,7 @@ input {
 }
 
 #tagline {
-  font-family: "Playfair Display", sans-serif;
+  font-family: 'Playfair Display', sans-serif;
   font-size: 50px;
   font-weight: 400;
   line-height: 50px;
@@ -495,8 +559,9 @@ input:focus {
     display: none;
   }
 
-  .menu {
+  .menu-desktop {
     display: flex;
+    flex-direction: row;
   }
 
   a {
@@ -504,7 +569,7 @@ input:focus {
   }
 
   header a::after {
-    content: "";
+    content: '';
     display: block;
     height: 2px;
     width: 0;
@@ -527,10 +592,12 @@ input:focus {
     font-size: 16px;
   }
 
-  .menu-item {
+  .menu-item-desktop {
     display: flex;
+    flex-direction: row;
     padding: 0;
     gap: 50px;
+    align-items: center;
   }
 
   .container {
