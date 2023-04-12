@@ -58,8 +58,66 @@ seeProject.addEventListener('click', () => {
       </div>
     </div>
       <button class="close close-popup" type="button"><i class="closeIcon material-icons">close</i></button>
+
+    
   </div>
-  `;
+  <div class="popup-image">
+    <img class="laptop-1" src="./assets/img/laptop.png" alt="" />
+    
+    <div class="popup-image-sm">
+      <img class="laptop-1" src="./assets/img/laptop.png" alt="" />
+      <img class="laptop-1" src="./assets/img/laptop.png" alt="" />
+      <img class="laptop-1" src="./assets/img/laptop.png" alt="" />
+      <img class="laptop-1" src="./assets/img/laptop.png" alt="" />
+    </div>
+  </div>
+
+  <div class="popup-text">
+    <p>
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam nobis nemo vitae tempora et magni in corporis earum illum cupiditate repudiandae, amet nihil reprehenderit voluptatum tempore eligendi deserunt id adipisci.
+    </p>
+    <p>
+    Iusto omnis nostrum velit nisi placeat aspernatur minus porro maxime voluptates! Odio facere inventore distinctio nam officiis necessitatibus voluptates quis sint architecto tempore ducimus voluptate eius, veritatis eaque deleniti asperiores.
+    </p>
+
+    <div class="popup-buttons">
+    <button class="primary-btn-2">
+    See live
+              <span class="material-symbols-outlined">
+                open_in_new
+              </span>
+              <style>
+              .material-symbols-outlined {
+                font-variation-settings:
+                  'FILL' 0,
+                  'wght' 400,
+                  'GRAD' 0,
+                  'opsz' 48
+                }
+              </style>
+                
+    </button>
+
+    <button class="primary-btn-2">
+    See source
+    <span class="material-symbols-outlined">
+    open_in_new
+    </span>
+    <style>
+      .material-symbols-outlined {
+        font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 48
+      }
+      </style>
+      
+      </button>
+      
+      </div>
+      </div>
+      `;
 
   main.appendChild(popup);
   body.appendChild(main);

@@ -161,8 +161,7 @@ input {
   color: #1a2236;
   background: white;
   list-style: none;
-  background-image: url(./assets/img/hamburger-menu-top.png),
-    url(./assets/img/hamburger-menu-bottom.png);
+  background-image: url(./assets/img/hamburger-menu-top.png), url(./assets/img/hamburger-menu-bottom.png);
   background-position: left top, left bottom;
   background-repeat: no-repeat, no-repeat;
   background-size: 75%, 100%;
@@ -574,6 +573,8 @@ input:focus {
   top: 0;
   background: white;
   padding: 20px;
+  border: #17494d solid;
+  overflow: auto;
 }
 
 .popup-container {
@@ -611,6 +612,49 @@ input:focus {
   align-self: flex-start;
   background: none;
   cursor: pointer;
+}
+
+.popup-image {
+  padding: 20px;
+}
+
+.popup-image-sm {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.popup-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+}
+
+.popup-text .primary-btn-2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  gap: 30px;
+  padding: 20px 20px;
+  font-size: 18px;
+  font-weight: 600;
+  background: white;
+  color: #1a2236;
+  border: #1a2236 solid 1px;
+  width: 80%;
+}
+
+.popup-text .primary-btn-2:hover {
+  background: #1a2236;
+  color: #fff;
+}
+
+.popup-text .popup-buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 @media screen and (min-width: 768px) {
@@ -722,6 +766,12 @@ input:focus {
     margin-top: 170px;
   }
 
+  .popup-container h3 {
+    font-size: 60px;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+
   .work-card-display .work-card-text h3 {
     font-size: 50px;
   }
@@ -741,6 +791,11 @@ input:focus {
     margin: 210px 0 0 140px;
     display: grid;
     grid-template-columns: 1fr 1fr 3fr;
+  }
+
+  .popup-container .work-card-text {
+    background: transparent;
+    color: #1a2236;
   }
 
   .work-card:nth-child(3) .work-card-text {
@@ -1027,25 +1082,18 @@ input:focus {
     position: fixed;
     top: 0;
     background: white;
-    border: #1a2236 solid 30px;
+    border: #1a2236 solid 40px;
     justify-content: space-between;
+  }
+
+  .main::-webkit-scrollbar {
+    display: none;
   }
 
   .popup-container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-  }
-
-  .popup-container .work-card-text {
-    background: transparent;
-    color: #1a2236;
-  }
-
-  .popup-container h3 {
-    font-size: 60px;
-    font-weight: 600;
-    margin-bottom: 10px;
   }
 
   .popup-container .lang-container {
@@ -1069,5 +1117,55 @@ input:focus {
     border: black solid 0;
     background: none;
     cursor: pointer;
+  }
+
+  .popup-image {
+    height: 100%;
+    width: auto;
+    padding: 20px;
+  }
+
+  .popup-image .laptop-1 {
+    display: block;
+  }
+
+  .popup-image-sm {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  .popup-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 20px 260px;
+  }
+
+  .popup-text .primary-btn-2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    gap: 30px;
+    padding: 20px 20px;
+    font-size: 18px;
+    font-weight: 600;
+    background: white;
+    color: #1a2236;
+    border: #1a2236 solid 1px;
+    width: 100%;
+  }
+
+  .popup-text .primary-btn-2:hover {
+    background: #1a2236;
+    color: #fff;
+    margin-top: 40px;
+  }
+
+  .popup-text .popup-buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
   }
 }
