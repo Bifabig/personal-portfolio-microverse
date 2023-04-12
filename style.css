@@ -47,6 +47,10 @@ h4 {
   font-size: 10.3334px;
 }
 
+button {
+  cursor: pointer;
+}
+
 img {
   max-width: 100%;
   max-height: 100%;
@@ -157,7 +161,8 @@ input {
   color: #1a2236;
   background: white;
   list-style: none;
-  background-image: url(./assets/img/hamburger-menu-top.png), url(./assets/img/hamburger-menu-bottom.png);
+  background-image: url(./assets/img/hamburger-menu-top.png),
+    url(./assets/img/hamburger-menu-bottom.png);
   background-position: left top, left bottom;
   background-repeat: no-repeat, no-repeat;
   background-size: 75%, 100%;
@@ -312,6 +317,14 @@ input {
   display: flex;
   flex-direction: column;
   margin-bottom: -4px;
+}
+
+.work-card-text .primary-btn-2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: large;
+  font-weight: 600;
 }
 
 .work-card #tagline {
@@ -959,5 +972,55 @@ input:focus {
     display: grid;
     place-items: center;
     text-align: center;
+  }
+
+  .main {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    background: white;
+    border: #1a2236 solid 30px;
+    justify-content: space-between;
+  }
+
+  .popup-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .popup-container .work-card-text {
+    background: transparent;
+    color: #1a2236;
+  }
+
+  .popup-container h3 {
+    font-size: 60px;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+
+  .popup-container .lang-container {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  .popup-container .lang-container #lang {
+    border: #1a2236 solid 1px;
+    padding: 6px;
+    font-size: 20px;
+    font-weight: 300;
+  }
+
+  .close-popup {
+    top: 1rem;
+    right: 1rem;
+    margin-right: 40px;
+    margin-bottom: 20px;
+    border: black solid 0;
+    background: none;
+    cursor: pointer;
   }
 }
