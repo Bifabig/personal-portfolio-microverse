@@ -73,7 +73,7 @@ const cardMethods = () => {
     postElement.innerHTML = `
     <img src="${cardData.featuredimg}" alt="" />
     <div class="work-card-text">
-    <h3 id="name">${cardData.name}</h3>
+    <h3>${cardData.name}</h3>
     <div>
         <ul class="lang-container">
           <li>
@@ -267,7 +267,7 @@ function validateEmail(input, requiredMsg, invalidMsg) {
     return false;
   }
   // validate email format
-  const emailRegex = /^[a-z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-z0-9-]+(?:\.[a-z0-9-]+)*$/;
+  const emailRegex = /^[a-z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-z0-9-]+(?:.[a-z0-9-]+)*$/;
 
   const email = input.value.trim();
 
@@ -284,6 +284,13 @@ const EMAIL_REQUIRED = 'Please enter your email';
 const EMAIL_INVALID = 'Please enter a correct email address format';
 
 form.addEventListener('submit', (event) => {
+  const fullname = document.getElementById('name').value;
+  const email = document.getElementById('email').value;
+  const message = document.getElementById('message').value;
+
+  const formData = { fullname, email, message };
+
+  window.localStorage.setItem('formData', JSON.stringify(formData));
   // stop form submission
   event.preventDefault();
 
@@ -299,3 +306,13 @@ form.addEventListener('submit', (event) => {
     event.currentTarget.submit();
   }
 });
+
+// preserve data in local storage
+const formData = window.localStorage.getItem('formData');
+if (formData) {
+  const formValues = JSON.parse(formData);
+
+  document.getElementById('name').value = formValues.fullname;
+  document.getElementById('email').value = formValues.email;
+  document.getElementById('message').value = formValues.message;
+}
