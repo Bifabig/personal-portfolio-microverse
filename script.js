@@ -11,7 +11,7 @@ const cardData = [
   {
     name: 'Project 1',
     description:
-      'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam nobis nemo vitae tempora et magni in corporis earum illum cupiditate repudiandae, amet nihil reprehenderit voluptatum tempore eligendi deserunt id adipisci.',
+      'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam nobis nemo vitae tempora et magni in corporis earum illum cupiditate repudiandae, amet nihil reprehenderit voluptatum tempore eligendi deserunt id adipisci. <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam nobis nemo vitae tempora et magni in corporis earum illum cupiditate repudiandae, amet nihil reprehenderit voluptatum tempore eligendi deserunt id adipisci.</p>',
     featuredimg: './assets/img/laptop.png',
     technologies: ['HTML/CSS', 'Ruby on Rails', 'JavaScript'],
     linklive: 'http://google.com',
@@ -20,7 +20,7 @@ const cardData = [
   {
     name: 'Project 2',
     description:
-      'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam nobis nemo vitae tempora et magni in corporis earum illum cupiditate repudiandae, amet nihil reprehenderit voluptatum tempore eligendi deserunt id adipisci.',
+      'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam nobis nemo vitae tempora et magni in corporis earum illum cupiditate repudiandae, amet nihil reprehenderit voluptatum tempore eligendi deserunt id adipisci. <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam nobis nemo vitae tempora et magni in corporis earum illum cupiditate repudiandae, amet nihil reprehenderit voluptatum tempore eligendi deserunt id adipisci.</p>',
     featuredimg: './assets/img/laptop 2.png',
     technologies: ['HTML/CSS', 'Ruby on Rails', 'JavaScript'],
     linklive: 'http://google.com',
@@ -29,7 +29,7 @@ const cardData = [
   {
     name: 'Project 3',
     description:
-      'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam nobis nemo vitae tempora et magni in corporis earum illum cupiditate repudiandae, amet nihil reprehenderit voluptatum tempore eligendi deserunt id adipisci.',
+      'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam nobis nemo vitae tempora et magni in corporis earum illum cupiditate repudiandae, amet nihil reprehenderit voluptatum tempore eligendi deserunt id adipisci. <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam nobis nemo vitae tempora et magni in corporis earum illum cupiditate repudiandae, amet nihil reprehenderit voluptatum tempore eligendi deserunt id adipisci.</p>',
     featuredimg: './assets/img/laptop 3.png',
     technologies: ['HTML/CSS', 'Ruby on Rails', 'JavaScript'],
     linklive: 'http://google.com',
@@ -38,7 +38,7 @@ const cardData = [
   {
     name: 'Project 4',
     description:
-      'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam nobis nemo vitae tempora et magni in corporis earum illum cupiditate repudiandae, amet nihil reprehenderit voluptatum tempore eligendi deserunt id adipisci.',
+      'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam nobis nemo vitae tempora et magni in corporis earum illum cupiditate repudiandae, amet nihil reprehenderit voluptatum tempore eligendi deserunt id adipisci. <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam nobis nemo vitae tempora et magni in corporis earum illum cupiditate repudiandae, amet nihil reprehenderit voluptatum tempore eligendi deserunt id adipisci.</p>',
     featuredimg: './assets/img/laptop 4.png',
     technologies: ['HTML/CSS', 'Ruby on Rails', 'JavaScript'],
     linklive: 'http://google.com',
@@ -47,7 +47,7 @@ const cardData = [
   {
     name: 'Project 5',
     description:
-      'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam nobis nemo vitae tempora et magni in corporis earum illum cupiditate repudiandae, amet nihil reprehenderit voluptatum tempore eligendi deserunt id adipisci.',
+      'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam nobis nemo vitae tempora et magni in corporis earum illum cupiditate repudiandae, amet nihil reprehenderit voluptatum tempore eligendi deserunt id adipisci. <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam nobis nemo vitae tempora et magni in corporis earum illum cupiditate repudiandae, amet nihil reprehenderit voluptatum tempore eligendi deserunt id adipisci.</p>',
     featuredimg: './assets/img/laptop 5.png',
     technologies: ['HTML/CSS', 'Ruby on Rails', 'JavaScript'],
     linklive: 'http://google.com',
@@ -56,7 +56,7 @@ const cardData = [
   {
     name: 'Project 6',
     description:
-      'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam nobis nemo vitae tempora et magni in corporis earum illum cupiditate repudiandae, amet nihil reprehenderit voluptatum tempore eligendi deserunt id adipisci.',
+      'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam nobis nemo vitae tempora et magni in corporis earum illum cupiditate repudiandae, amet nihil reprehenderit voluptatum tempore eligendi deserunt id adipisci. <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam nobis nemo vitae tempora et magni in corporis earum illum cupiditate repudiandae, amet nihil reprehenderit voluptatum tempore eligendi deserunt id adipisci.</p>',
     featuredimg: './assets/img/laptop 6.png',
     technologies: ['HTML/CSS', 'Ruby on Rails', 'JavaScript'],
     linklive: 'http://google.com',
@@ -186,8 +186,8 @@ while (i < seeProject.length) {
       </p>
   
       <div class="popup-buttons">
-      <button class="primary-btn-2">
-      <a class="link-btn" href="${cardData[i].linklive}"/>See live</a>
+      <button class="link-btn">
+      <a href="${cardData[i].linklive}"/>See live</a>
                 <span class="material-symbols-outlined">
                   open_in_new
                 </span>
@@ -203,8 +203,8 @@ while (i < seeProject.length) {
   
       </button>
   
-      <button class="primary-btn-2">
-      <a class="link-btn" href="${cardData[i].linksrc}"/>See source</a>
+      <button class="link-btn">
+      <a href="${cardData[i].linksrc}"/>See source</a>
       <span class="material-symbols-outlined">
       open_in_new
       </span>
@@ -235,3 +235,67 @@ while (i < seeProject.length) {
 
   i += 1;
 }
+
+// show a message with a type of the input
+function showMessage(input, message, type) {
+  // get the small element and set the message
+  const msg = input.parentNode.querySelector('small');
+  msg.innerText = message;
+  // update the class for the input
+  input.className = type ? 'success' : 'error';
+  return type;
+}
+
+function showError(input, message) {
+  return showMessage(input, message, false);
+}
+
+function showSuccess(input) {
+  return showMessage(input, '', true);
+}
+
+function hasValue(input, message) {
+  if (input.value.trim() === '') {
+    return showError(input, message);
+  }
+  return showSuccess(input);
+}
+
+function validateEmail(input, requiredMsg, invalidMsg) {
+  // check if the value is not empty
+  if (!hasValue(input, requiredMsg)) {
+    return false;
+  }
+  // validate email format
+  const emailRegex = /^[a-z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-z0-9-]+(?:\.[a-z0-9-]+)*$/;
+
+  const email = input.value.trim();
+
+  if (!emailRegex.test(email)) {
+    return showError(input, invalidMsg);
+  }
+  return true;
+}
+
+const form = document.querySelector('.contact');
+
+const NAME_REQUIRED = 'Please enter your name';
+const EMAIL_REQUIRED = 'Please enter your email';
+const EMAIL_INVALID = 'Please enter a correct email address format';
+
+form.addEventListener('submit', (event) => {
+  // stop form submission
+  event.preventDefault();
+
+  // validate the form
+  const nameValid = hasValue(form.elements.name, NAME_REQUIRED);
+  const emailValid = validateEmail(
+    form.elements.email,
+    EMAIL_REQUIRED,
+    EMAIL_INVALID,
+  );
+  // if valid, submit the form.
+  if (nameValid && emailValid) {
+    event.currentTarget.submit();
+  }
+});

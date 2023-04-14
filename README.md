@@ -88,6 +88,7 @@ After you're finished please remove all the comments and instructions!
 - **Icons to link to social media**
 - **Animation**
 - **Data Session**
+- **DOM manipulation**
 
 <!-- > Describe between 1-3 key features of the application. -->
 
