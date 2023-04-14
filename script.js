@@ -284,13 +284,6 @@ const EMAIL_REQUIRED = 'Please enter your email';
 const EMAIL_INVALID = 'Please enter a correct email address format';
 
 form.addEventListener('submit', (event) => {
-  const fullname = document.getElementById('name').value;
-  const email = document.getElementById('email').value;
-  const message = document.getElementById('message').value;
-
-  const formData = { fullname, email, message };
-
-  window.localStorage.setItem('formData', JSON.stringify(formData));
   // stop form submission
   event.preventDefault();
 
@@ -305,6 +298,16 @@ form.addEventListener('submit', (event) => {
   if (nameValid && emailValid) {
     event.currentTarget.submit();
   }
+});
+
+form.addEventListener('input', () => {
+  const fullname = document.getElementById('name').value;
+  const email = document.getElementById('email').value;
+  const message = document.getElementById('message').value;
+
+  const formData = { fullname, email, message };
+
+  window.localStorage.setItem('formData', JSON.stringify(formData));
 });
 
 // preserve data in local storage
