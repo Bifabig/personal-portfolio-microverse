@@ -362,6 +362,7 @@ input {
 }
 
 .lang-container {
+  display: flex;
   padding: 0;
   margin: 0;
 }
