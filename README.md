@@ -87,6 +87,7 @@ After you're finished please remove all the comments and instructions!
 - **Mobile responsive**
 - **Icons to link to social media**
 - **Animation**
+- **Data Session**
 - **DOM manipulation**
 - **Data Session**
 
