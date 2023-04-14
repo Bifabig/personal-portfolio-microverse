@@ -5,9 +5,113 @@ const closeIcon = document.querySelector('.closeIcon');
 const menuIcon = document.querySelector('.menuIcon');
 const menuItem = document.querySelector('.menu-item-desktop');
 const items = document.querySelectorAll('.menuItemDesktop');
-const seeProject = document.querySelector('.primary-btn-2');
-const body = document.querySelector('body');
 
+const body = document.querySelector('body');
+const cardData = [
+  {
+    name: 'Project 1',
+    description:
+      'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam nobis nemo vitae tempora et magni in corporis earum illum cupiditate repudiandae, amet nihil reprehenderit voluptatum tempore eligendi deserunt id adipisci.',
+    featuredimg: './assets/img/laptop.png',
+    technologies: ['HTML/CSS', 'Ruby on Rails', 'JavaScript'],
+    linklive: 'http://google.com',
+    linksrc: 'http://github.com',
+  },
+  {
+    name: 'Project 2',
+    description:
+      'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam nobis nemo vitae tempora et magni in corporis earum illum cupiditate repudiandae, amet nihil reprehenderit voluptatum tempore eligendi deserunt id adipisci.',
+    featuredimg: './assets/img/laptop 2.png',
+    technologies: ['HTML/CSS', 'Ruby on Rails', 'JavaScript'],
+    linklive: 'http://google.com',
+    linksrc: 'http://github.com',
+  },
+  {
+    name: 'Project 3',
+    description:
+      'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam nobis nemo vitae tempora et magni in corporis earum illum cupiditate repudiandae, amet nihil reprehenderit voluptatum tempore eligendi deserunt id adipisci.',
+    featuredimg: './assets/img/laptop 3.png',
+    technologies: ['HTML/CSS', 'Ruby on Rails', 'JavaScript'],
+    linklive: 'http://google.com',
+    linksrc: 'http://github.com',
+  },
+  {
+    name: 'Project 4',
+    description:
+      'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam nobis nemo vitae tempora et magni in corporis earum illum cupiditate repudiandae, amet nihil reprehenderit voluptatum tempore eligendi deserunt id adipisci.',
+    featuredimg: './assets/img/laptop 4.png',
+    technologies: ['HTML/CSS', 'Ruby on Rails', 'JavaScript'],
+    linklive: 'http://google.com',
+    linksrc: 'http://github.com',
+  },
+  {
+    name: 'Project 5',
+    description:
+      'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam nobis nemo vitae tempora et magni in corporis earum illum cupiditate repudiandae, amet nihil reprehenderit voluptatum tempore eligendi deserunt id adipisci.',
+    featuredimg: './assets/img/laptop 5.png',
+    technologies: ['HTML/CSS', 'Ruby on Rails', 'JavaScript'],
+    linklive: 'http://google.com',
+    linksrc: 'http://github.com',
+  },
+  {
+    name: 'Project 6',
+    description:
+      'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam nobis nemo vitae tempora et magni in corporis earum illum cupiditate repudiandae, amet nihil reprehenderit voluptatum tempore eligendi deserunt id adipisci.',
+    featuredimg: './assets/img/laptop 6.png',
+    technologies: ['HTML/CSS', 'Ruby on Rails', 'JavaScript'],
+    linklive: 'http://google.com',
+    linksrc: 'http://github.com',
+  },
+];
+
+// dynamic card
+const cardContainer = document.querySelector('.works');
+const cardMethods = () => {
+  cardData.map((cardData) => {
+    const postElement = document.createElement('div');
+    postElement.classList.add('work-card');
+    postElement.innerHTML = `
+    <img src="${cardData.featuredimg}" alt="" />
+    <div class="work-card-text">
+    <h3 id="name">${cardData.name}</h3>
+    <div>
+        <ul class="lang-container">
+          <li>
+            <h4 id="lang">${cardData.technologies[0]}</h4>
+          </li>
+          <li>
+            <h4 id="lang">${cardData.technologies[1]}</h4>
+          </li>
+          <li>
+            <h4 id="lang">${cardData.technologies[2]}</h4>
+          </li>
+        </ul>
+      </div>
+      <button class="primary-btn-2">
+              See this project
+              <span class="material-symbols-outlined">
+                arrow_forward
+                </span>
+              <style>
+                .material-symbols-outlined {
+                  font-variation-settings:
+                  'FILL' 0,
+                  'wght' 600,
+                  'GRAD' 0,
+                  'opsz' 48
+                }
+                </style>
+                
+            </button>
+    </div>
+    `;
+    return cardContainer.appendChild(postElement);
+  });
+};
+
+cardMethods();
+
+// active class
 items.forEach((e) => {
   e.addEventListener('click', () => {
     menuItem.querySelector('.active').classList.remove('active');
@@ -15,6 +119,7 @@ items.forEach((e) => {
   });
 });
 
+// hamburger toggle
 function toggleMenu() {
   if (menu.classList.contains('showMenu')) {
     menu.classList.remove('showMenu');
@@ -34,96 +139,196 @@ hamburger.addEventListener('click', toggleMenu);
 
 menuItems.forEach((menuItem) => menuItem.addEventListener('click', toggleMenu));
 
-seeProject.addEventListener('click', () => {
+// popup window
+const seeProject = document.querySelectorAll('.primary-btn-2');
+
+let i = 0;
+while (i < seeProject.length) {
   const main = document.createElement('div');
   main.className = 'main';
   const popup = document.createElement('div');
   popup.className = 'popup';
   popup.innerHTML = `
-  <div class="popup-container">
-    <div class="work-card-text">
-      <h3>Project name goes here</h3>
-      <div>
-        <ul class="lang-container">
-          <li>
-          <h4 id="lang">HTML/CSS</h4>
-          </li>
-          <li>
-            <h4 id="lang">Ruby on Rails</h4>
-          </li>
-          <li>
-            <h4 id="lang">JavaScript</h4>
-           </li>
-        </ul>
+    <div class="popup-container">
+      <div class="work-card-text">
+        <h3>${cardData[i].name}</h3>
+        <div>
+          <ul class="lang-container">
+            <li>
+            <h4 id="lang">${cardData[i].technologies[0]}</h4>
+            </li>
+            <li>
+              <h4 id="lang">${cardData[i].technologies[1]}</h4>
+            </li>
+            <li>
+              <h4 id="lang">${cardData[i].technologies[2]}</h4>
+             </li>
+          </ul>
+        </div>
+      </div>
+        <button class="close close-popup" type="button"><i class="closeIcon material-icons">close</i></button>
+  
+    </div>
+    <div class="popup-image">
+      <img class="laptop-1" src="${cardData[i].featuredimg}" alt="" />
+  
+      <div class="popup-image-sm">
+        <img class="laptop-1" src="${cardData[i].featuredimg}" alt="" />
+        <img class="laptop-1" src="${cardData[i].featuredimg}" alt="" />
+        <img class="laptop-1" src="${cardData[i].featuredimg}" alt="" />
+        <img class="laptop-1" src="${cardData[i].featuredimg}" alt="" />
       </div>
     </div>
-      <button class="close close-popup" type="button"><i class="closeIcon material-icons">close</i></button>
-
-    
-  </div>
-  <div class="popup-image">
-    <img class="laptop-1" src="./assets/img/laptop.png" alt="" />
-    
-    <div class="popup-image-sm">
-      <img class="laptop-1" src="./assets/img/laptop.png" alt="" />
-      <img class="laptop-1" src="./assets/img/laptop.png" alt="" />
-      <img class="laptop-1" src="./assets/img/laptop.png" alt="" />
-      <img class="laptop-1" src="./assets/img/laptop.png" alt="" />
-    </div>
-  </div>
-
-  <div class="popup-text">
-    <p>
-    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam nobis nemo vitae tempora et magni in corporis earum illum cupiditate repudiandae, amet nihil reprehenderit voluptatum tempore eligendi deserunt id adipisci.
-    </p>
-    <p>
-    Iusto omnis nostrum velit nisi placeat aspernatur minus porro maxime voluptates! Odio facere inventore distinctio nam officiis necessitatibus voluptates quis sint architecto tempore ducimus voluptate eius, veritatis eaque deleniti asperiores.
-    </p>
-
-    <div class="popup-buttons">
-    <button class="primary-btn-2">
-    See live
-              <span class="material-symbols-outlined">
-                open_in_new
-              </span>
-              <style>
-              .material-symbols-outlined {
-                font-variation-settings:
-                  'FILL' 0,
-                  'wght' 400,
-                  'GRAD' 0,
-                  'opsz' 48
-                }
-              </style>
-                
-    </button>
-
-    <button class="primary-btn-2">
-    See source
-    <span class="material-symbols-outlined">
-    open_in_new
-    </span>
-    <style>
-      .material-symbols-outlined {
-        font-variation-settings:
-        'FILL' 0,
-        'wght' 400,
-        'GRAD' 0,
-        'opsz' 48
-      }
-      </style>
-      
+  
+    <div class="popup-text">
+      <p>
+      ${cardData[i].description}
+      </p>
+  
+      <div class="popup-buttons">
+      <button class="primary-btn-2">
+      <a class="link-btn" href="${cardData[i].linklive}"/>See live</a>
+                <span class="material-symbols-outlined">
+                  open_in_new
+                </span>
+                <style>
+                .material-symbols-outlined {
+                  font-variation-settings:
+                    'FILL' 0,
+                    'wght' 400,
+                    'GRAD' 0,
+                    'opsz' 48
+                  }
+                </style>
+  
       </button>
-      
-      </div>
-      </div>
-      `;
+  
+      <button class="primary-btn-2">
+      <a class="link-btn" href="${cardData[i].linksrc}"/>See source</a>
+      <span class="material-symbols-outlined">
+      open_in_new
+      </span>
+      <style>
+        .material-symbols-outlined {
+          font-variation-settings:
+          'FILL' 0,
+          'wght' 400,
+          'GRAD' 0,
+          'opsz' 48
+        }
+        </style>
+  
+        </button>
+  
+        </div>
+        </div>
+        `;
+  seeProject[i].addEventListener('click', () => {
+    main.appendChild(popup);
+    body.appendChild(main);
 
-  main.appendChild(popup);
-  body.appendChild(main);
-
-  const close = document.querySelector('.close');
-  close.addEventListener('click', () => {
-    body.removeChild(main);
+    const close = document.querySelector('.close');
+    close.addEventListener('click', () => {
+      body.removeChild(main);
+    });
   });
-});
+
+  i += 1;
+}
+// seeProject.forEach((e) => {
+//   e.addEventListener('click', () => {
+//     const main = document.createElement('div');
+//     main.className = 'main';
+//     const popup = document.createElement('div');
+//     popup.className = 'popup';
+//     // const arr = [...cardContainer.children];
+//     // console.log(arr[0].querySelector('h3'));
+
+//     popup.innerHTML = `
+//     <div class="popup-container">
+//       <div class="work-card-text">
+//         <h3>${cardData[0].name}</h3>
+//         <div>
+//           <ul class="lang-container">
+//             <li>
+//             <h4 id="lang">HTML/CSS</h4>
+//             </li>
+//             <li>
+//               <h4 id="lang">Ruby on Rails</h4>
+//             </li>
+//             <li>
+//               <h4 id="lang">JavaScript</h4>
+//              </li>
+//           </ul>
+//         </div>
+//       </div>
+//         <button class="close close-popup" type="button"><i class="closeIcon material-icons">close</i></button>
+
+//     </div>
+//     <div class="popup-image">
+//       <img class="laptop-1" src="./assets/img/laptop.png" alt="" />
+
+//       <div class="popup-image-sm">
+//         <img class="laptop-1" src="./assets/img/laptop.png" alt="" />
+//         <img class="laptop-1" src="./assets/img/laptop.png" alt="" />
+//         <img class="laptop-1" src="./assets/img/laptop.png" alt="" />
+//         <img class="laptop-1" src="./assets/img/laptop.png" alt="" />
+//       </div>
+//     </div>
+
+//     <div class="popup-text">
+//       <p>
+//       Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam nobis nemo vitae tempora et magni in corporis earum illum cupiditate repudiandae, amet nihil reprehenderit voluptatum tempore eligendi deserunt id adipisci.
+//       </p>
+//       <p>
+//       Iusto omnis nostrum velit nisi placeat aspernatur minus porro maxime voluptates! Odio facere inventore distinctio nam officiis necessitatibus voluptates quis sint architecto tempore ducimus voluptate eius, veritatis eaque deleniti asperiores.
+//       </p>
+
+//       <div class="popup-buttons">
+//       <button class="primary-btn-2">
+//       See live
+//                 <span class="material-symbols-outlined">
+//                   open_in_new
+//                 </span>
+//                 <style>
+//                 .material-symbols-outlined {
+//                   font-variation-settings:
+//                     'FILL' 0,
+//                     'wght' 400,
+//                     'GRAD' 0,
+//                     'opsz' 48
+//                   }
+//                 </style>
+
+//       </button>
+
+//       <button class="primary-btn-2">
+//       See source
+//       <span class="material-symbols-outlined">
+//       open_in_new
+//       </span>
+//       <style>
+//         .material-symbols-outlined {
+//           font-variation-settings:
+//           'FILL' 0,
+//           'wght' 400,
+//           'GRAD' 0,
+//           'opsz' 48
+//         }
+//         </style>
+
+//         </button>
+
+//         </div>
+//         </div>
+//         `;
+
+//     main.appendChild(popup);
+//     body.appendChild(main);
+
+//     const close = document.querySelector('.close');
+//     close.addEventListener('click', () => {
+//       body.removeChild(main);
+//     });
+//   });
+// });
