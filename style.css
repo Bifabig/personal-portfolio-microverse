@@ -362,7 +362,6 @@ input {
 }
 
 .lang-container {
-  display: flex;
   padding: 0;
   margin: 0;
 }
@@ -606,6 +605,7 @@ input:focus {
 
 .popup-container .lang-container #lang {
   border: #1a2236 solid 1px;
+  white-space: nowrap;
   padding: 6px;
   font-size: 16px;
   font-weight: 300;
