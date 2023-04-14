@@ -267,7 +267,8 @@ function validateEmail(input, requiredMsg, invalidMsg) {
     return false;
   }
   // validate email format
-  const emailRegex = /^[a-z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-z0-9-]+(?:\.[a-z0-9-]+)*$/;
+  const emailRegex =
+    /^[a-z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-z0-9-]+(?:\.[a-z0-9-]+)*$/;
 
   const email = input.value.trim();
 
@@ -292,7 +293,7 @@ form.addEventListener('submit', (event) => {
   const emailValid = validateEmail(
     form.elements.email,
     EMAIL_REQUIRED,
-    EMAIL_INVALID,
+    EMAIL_INVALID
   );
   // if valid, submit the form.
   if (nameValid && emailValid) {
