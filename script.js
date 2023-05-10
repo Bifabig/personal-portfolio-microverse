@@ -9,19 +9,23 @@ const items = document.querySelectorAll('.menuItemDesktop');
 const body = document.querySelector('body');
 const cardData = [
   {
-    name: 'Project 1',
+    name: 'Awesome Books',
     description:
-      'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam nobis nemo vitae tempora et magni in corporis earum illum cupiditate repudiandae, amet nihil reprehenderit voluptatum tempore eligendi deserunt id adipisci. <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam nobis nemo vitae tempora et magni in corporis earum illum cupiditate repudiandae, amet nihil reprehenderit voluptatum tempore eligendi deserunt id adipisci.</p>',
-    featuredimg: './assets/img/laptop.png',
+      'Awesome Books is a simple website that takes the title and author values and creates a list of books using JavaScript DOM and ES6 syntax.</p>',
+    featuredimg: [
+      './assets/img/awesome-books-1.png',
+      './assets/img/awesome-books-2.png',
+      './assets/img/awesome-books-3.png',
+    ],
     technologies: ['HTML/CSS', 'Ruby on Rails', 'JavaScript'],
-    linklive: 'http://google.com',
-    linksrc: 'http://github.com',
+    linklive: '"https://bifabig.github.io/awesome-books-es6/"',
+    linksrc: '"https://github.com/Bifabig/awesome-books-es6"',
   },
   {
     name: 'Project 2',
     description:
       'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam nobis nemo vitae tempora et magni in corporis earum illum cupiditate repudiandae, amet nihil reprehenderit voluptatum tempore eligendi deserunt id adipisci. <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam nobis nemo vitae tempora et magni in corporis earum illum cupiditate repudiandae, amet nihil reprehenderit voluptatum tempore eligendi deserunt id adipisci.</p>',
-    featuredimg: './assets/img/laptop 2.png',
+    featuredimg: ['./assets/img/laptop 2.png'],
     technologies: ['HTML/CSS', 'Ruby on Rails', 'JavaScript'],
     linklive: 'http://google.com',
     linksrc: 'http://github.com',
@@ -30,7 +34,7 @@ const cardData = [
     name: 'Project 3',
     description:
       'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam nobis nemo vitae tempora et magni in corporis earum illum cupiditate repudiandae, amet nihil reprehenderit voluptatum tempore eligendi deserunt id adipisci. <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam nobis nemo vitae tempora et magni in corporis earum illum cupiditate repudiandae, amet nihil reprehenderit voluptatum tempore eligendi deserunt id adipisci.</p>',
-    featuredimg: './assets/img/laptop 3.png',
+    featuredimg: ['./assets/img/laptop 3.png'],
     technologies: ['HTML/CSS', 'Ruby on Rails', 'JavaScript'],
     linklive: 'http://google.com',
     linksrc: 'http://github.com',
@@ -39,7 +43,7 @@ const cardData = [
     name: 'Project 4',
     description:
       'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam nobis nemo vitae tempora et magni in corporis earum illum cupiditate repudiandae, amet nihil reprehenderit voluptatum tempore eligendi deserunt id adipisci. <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam nobis nemo vitae tempora et magni in corporis earum illum cupiditate repudiandae, amet nihil reprehenderit voluptatum tempore eligendi deserunt id adipisci.</p>',
-    featuredimg: './assets/img/laptop 4.png',
+    featuredimg: ['./assets/img/laptop 4.png'],
     technologies: ['HTML/CSS', 'Ruby on Rails', 'JavaScript'],
     linklive: 'http://google.com',
     linksrc: 'http://github.com',
@@ -48,7 +52,7 @@ const cardData = [
     name: 'Project 5',
     description:
       'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam nobis nemo vitae tempora et magni in corporis earum illum cupiditate repudiandae, amet nihil reprehenderit voluptatum tempore eligendi deserunt id adipisci. <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam nobis nemo vitae tempora et magni in corporis earum illum cupiditate repudiandae, amet nihil reprehenderit voluptatum tempore eligendi deserunt id adipisci.</p>',
-    featuredimg: './assets/img/laptop 5.png',
+    featuredimg: ['./assets/img/laptop 5.png'],
     technologies: ['HTML/CSS', 'Ruby on Rails', 'JavaScript'],
     linklive: 'http://google.com',
     linksrc: 'http://github.com',
@@ -57,7 +61,7 @@ const cardData = [
     name: 'Project 6',
     description:
       'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam nobis nemo vitae tempora et magni in corporis earum illum cupiditate repudiandae, amet nihil reprehenderit voluptatum tempore eligendi deserunt id adipisci. <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam nobis nemo vitae tempora et magni in corporis earum illum cupiditate repudiandae, amet nihil reprehenderit voluptatum tempore eligendi deserunt id adipisci.</p>',
-    featuredimg: './assets/img/laptop 6.png',
+    featuredimg: ['./assets/img/laptop 6.png'],
     technologies: ['HTML/CSS', 'Ruby on Rails', 'JavaScript'],
     linklive: 'http://google.com',
     linksrc: 'http://github.com',
@@ -71,7 +75,7 @@ const cardMethods = () => {
     const postElement = document.createElement('div');
     postElement.classList.add('work-card');
     postElement.innerHTML = `
-    <img src="${cardData.featuredimg}" alt="" />
+    <img src="${cardData.featuredimg[0]}" alt="" />
     <div class="work-card-text">
     <h3>${cardData.name}</h3>
     <div>
@@ -170,13 +174,13 @@ while (i < seeProject.length) {
   
     </div>
     <div class="popup-image">
-      <img class="laptop-1" src="${cardData[i].featuredimg}" alt="" />
+      <img class="laptop-1" src="${cardData[i].featuredimg[0]}" alt="" />
   
       <div class="popup-image-sm">
-        <img class="laptop-1" src="${cardData[i].featuredimg}" alt="" />
-        <img class="laptop-1" src="${cardData[i].featuredimg}" alt="" />
-        <img class="laptop-1" src="${cardData[i].featuredimg}" alt="" />
-        <img class="laptop-1" src="${cardData[i].featuredimg}" alt="" />
+        <img class="laptop-1" src="${cardData[i].featuredimg[1]}" alt="" />
+        <img class="laptop-1" src="${cardData[i].featuredimg[2]}" alt="" />
+        <img class="laptop-1" src="${cardData[i].featuredimg[3]}" alt="" />
+        <img class="laptop-1" src="${cardData[i].featuredimg[4]}" alt="" />
       </div>
     </div>
   
@@ -186,40 +190,26 @@ while (i < seeProject.length) {
       </p>
   
       <div class="popup-buttons">
+
+      <a href=${cardData[i].linklive} target=”_blank”/>
       <button class="link-btn">
-      <a href="${cardData[i].linklive}"/>See live</a>
+      See live
                 <span class="material-symbols-outlined">
                   open_in_new
                 </span>
-                <style>
-                .material-symbols-outlined {
-                  font-variation-settings:
-                    'FILL' 0,
-                    'wght' 400,
-                    'GRAD' 0,
-                    'opsz' 48
-                  }
-                </style>
   
       </button>
-  
+      </a>
+                  
+      <a href=${cardData[i].linksrc} target=”_blank”/>
       <button class="link-btn">
-      <a href="${cardData[i].linksrc}"/>See source</a>
+      See source
       <span class="material-symbols-outlined">
       open_in_new
       </span>
-      <style>
-        .material-symbols-outlined {
-          font-variation-settings:
-          'FILL' 0,
-          'wght' 400,
-          'GRAD' 0,
-          'opsz' 48
-        }
-        </style>
   
         </button>
-  
+        </a>
         </div>
         </div>
         `;
