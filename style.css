@@ -671,8 +671,8 @@ input:focus {
   display: flex;
   margin: 20px 0;
   border: 1px solid #1a2236;
-  padding: 16px 0 16px 16px;
-  width: 53%;
+  padding: 16px 20px 16px 20px;
+  width: 100%;
   justify-content: center;
   align-items: center;
   gap: 20px;
@@ -698,6 +698,10 @@ input:focus {
 
 .popup-buttons button {
   align-self: center;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 48;
 }
 
 @media screen and (min-width: 768px) {
