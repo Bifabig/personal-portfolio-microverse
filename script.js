@@ -9,62 +9,82 @@ const items = document.querySelectorAll('.menuItemDesktop');
 const body = document.querySelector('body');
 const cardData = [
   {
+    name: 'Space Travelers\' Hub',
+    description:
+      'Space Travelers\' Hub is a web application that uses real live data from the SpaceX API. It provides information on commercial and scientific space travel services. The application also allows users to book rockets and join selected space missions.',
+    featuredimg: [
+      './assets/img/space-travelers-hub-1.png',
+      './assets/img/space-travelers-hub-2.png',
+      './assets/img/space-travelers-hub-3.png',
+    ],
+    technologies: ['CSS', 'React', 'Redux'],
+    linklive: 'https://space-travelers-hub-cz9s.onrender.com',
+    linksrc: 'https://github.com/Bifabig/space-travelers-hub-react-redux',
+  },
+  {
+    name: 'Math Magicians',
+    description:
+      'Math magicians is a website for all fans of mathematics. It is a Single Page App (SPA) that allows users to: - Make simple calculations. - Read a random math-related quote.',
+    featuredimg: [
+      './assets/img/math-magicians-1.png',
+      './assets/img/math-magicians-2.png',
+      './assets/img/math-magicians-3.png',
+    ],
+    technologies: ['SASS', 'React', 'React Router'],
+    linklive: 'https://64a55938928acb009063a982--mathmagicianbiftu.netlify.app/',
+    linksrc: 'https://github.com/Bifabig/math-magicians/',
+  },
+  {
+    name: 'Star Wars',
+    description:
+      'Star Wars project is a web application based on an external API. We chose an API that provides data about Star Wars Movies and then built the webapp around it. The webapp has 2 user interfaces: A home page showing a list of movies that you can "like." A popup window with more data about a movie',
+    featuredimg: [
+      './assets/img/star-wars-1.png',
+      './assets/img/star-wars-2.png',
+      './assets/img/star-wars-3.png',
+    ],
+    technologies: ['CSS', 'HTML', 'JavaScript'],
+    linklive: 'https://marcodiaz2000.github.io/Star-Wars-Projects/dist/',
+    linksrc: 'https://github.com/MarcoDiaz2000/Star-Wars-Projects',
+  },
+  {
+    name: 'Digital Marketing Summit',
+    description:
+      'Digital Marketing Summit is a conference website for digital marketing enthusiasts.',
+    featuredimg: [
+      './assets/img/digital-marketing-summit-1.png',
+      './assets/img/digital-marketing-summit-2.png',
+      './assets/img/digital-marketing-summit-3.png',
+    ],
+    technologies: ['CSS', 'HTML', 'JavaScript'],
+    linklive: 'https://bifabig.github.io/digital-marketing-summit/',
+    linksrc: 'https://github.com/Bifabig/digital-marketing-summit',
+  },
+  {
     name: 'Awesome Books',
     description:
-      'Awesome Books is a simple website that takes the title and author values and creates a list of books using JavaScript DOM and ES6 syntax.</p>',
+      'Awesome Books is a simple website that takes the title and author values and creates a list of books using JavaScript DOM and ES6 syntax.',
     featuredimg: [
       './assets/img/awesome-books-1.png',
       './assets/img/awesome-books-2.png',
       './assets/img/awesome-books-3.png',
     ],
-    technologies: ['HTML/CSS', 'Ruby on Rails', 'JavaScript'],
-    linklive: '"https://bifabig.github.io/awesome-books-es6/"',
-    linksrc: '"https://github.com/Bifabig/awesome-books-es6"',
+    technologies: ['CSS', 'HTML', 'JavaScript'],
+    linklive: 'hhttps://bifabig.github.io/awesome-books-es6/',
+    linksrc: 'https://github.com/Bifabig/awesome-books-es6',
   },
   {
-    name: 'Project 2',
+    name: 'Stocks & Balance sheet',
     description:
-      'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam nobis nemo vitae tempora et magni in corporis earum illum cupiditate repudiandae, amet nihil reprehenderit voluptatum tempore eligendi deserunt id adipisci. <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam nobis nemo vitae tempora et magni in corporis earum illum cupiditate repudiandae, amet nihil reprehenderit voluptatum tempore eligendi deserunt id adipisci.</p>',
-    featuredimg: ['./assets/img/laptop 2.png'],
-    technologies: ['HTML/CSS', 'Ruby on Rails', 'JavaScript'],
-    linklive: 'http://google.com',
-    linksrc: 'http://github.com',
-  },
-  {
-    name: 'Project 3',
-    description:
-      'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam nobis nemo vitae tempora et magni in corporis earum illum cupiditate repudiandae, amet nihil reprehenderit voluptatum tempore eligendi deserunt id adipisci. <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam nobis nemo vitae tempora et magni in corporis earum illum cupiditate repudiandae, amet nihil reprehenderit voluptatum tempore eligendi deserunt id adipisci.</p>',
-    featuredimg: ['./assets/img/laptop 3.png'],
-    technologies: ['HTML/CSS', 'Ruby on Rails', 'JavaScript'],
-    linklive: 'http://google.com',
-    linksrc: 'http://github.com',
-  },
-  {
-    name: 'Project 4',
-    description:
-      'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam nobis nemo vitae tempora et magni in corporis earum illum cupiditate repudiandae, amet nihil reprehenderit voluptatum tempore eligendi deserunt id adipisci. <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam nobis nemo vitae tempora et magni in corporis earum illum cupiditate repudiandae, amet nihil reprehenderit voluptatum tempore eligendi deserunt id adipisci.</p>',
-    featuredimg: ['./assets/img/laptop 4.png'],
-    technologies: ['HTML/CSS', 'Ruby on Rails', 'JavaScript'],
-    linklive: 'http://google.com',
-    linksrc: 'http://github.com',
-  },
-  {
-    name: 'Project 5',
-    description:
-      'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam nobis nemo vitae tempora et magni in corporis earum illum cupiditate repudiandae, amet nihil reprehenderit voluptatum tempore eligendi deserunt id adipisci. <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam nobis nemo vitae tempora et magni in corporis earum illum cupiditate repudiandae, amet nihil reprehenderit voluptatum tempore eligendi deserunt id adipisci.</p>',
-    featuredimg: ['./assets/img/laptop 5.png'],
-    technologies: ['HTML/CSS', 'Ruby on Rails', 'JavaScript'],
-    linklive: 'http://google.com',
-    linksrc: 'http://github.com',
-  },
-  {
-    name: 'Project 6',
-    description:
-      'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam nobis nemo vitae tempora et magni in corporis earum illum cupiditate repudiandae, amet nihil reprehenderit voluptatum tempore eligendi deserunt id adipisci. <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam nobis nemo vitae tempora et magni in corporis earum illum cupiditate repudiandae, amet nihil reprehenderit voluptatum tempore eligendi deserunt id adipisci.</p>',
-    featuredimg: ['./assets/img/laptop 6.png'],
-    technologies: ['HTML/CSS', 'Ruby on Rails', 'JavaScript'],
-    linklive: 'http://google.com',
-    linksrc: 'http://github.com',
+      'Stocks & Balance sheet is a mobile application that fetches company stock symbols and balance sheet data for NYSE and other stocks from an API.',
+    featuredimg: [
+      './assets/img/stocks-1-2.png',
+      './assets/img/stocks-2.png',
+      './assets/img/stocks-3.png',
+    ],
+    technologies: ['CSS', 'React', 'Redux'],
+    linklive: 'https://64a02ced6243bb327540b000--balancesheet-biftu.netlify.app',
+    linksrc: 'https://github.com/Bifabig/react-redux-capstone',
   },
 ];
 
@@ -174,13 +194,15 @@ while (i < seeProject.length) {
   
     </div>
     <div class="popup-image">
-      <img class="laptop-1" src="${cardData[i].featuredimg[0]}" alt="" />
+      <img class="popup-image-1" src="${cardData[i].featuredimg[0]}" alt="" />
   
       <div class="popup-image-sm">
-        <img class="laptop-1" src="${cardData[i].featuredimg[1]}" alt="" />
-        <img class="laptop-1" src="${cardData[i].featuredimg[2]}" alt="" />
-        <img class="laptop-1" src="${cardData[i].featuredimg[3]}" alt="" />
-        <img class="laptop-1" src="${cardData[i].featuredimg[4]}" alt="" />
+        
+          <img class="popup-image-sm-1" src="${cardData[i].featuredimg[1]}" alt="" />
+        
+        
+          <img class="popup-image-sm-1" src="${cardData[i].featuredimg[2]}" alt="" />
+        
       </div>
     </div>
   
